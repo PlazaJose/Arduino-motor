@@ -14,42 +14,8 @@ float rotation_ = 0.5;
 
 **the in the loop you can simply call the functions you need:**
 
-if(command == UP){
-
 motor_A.move_front(speed);
 
-motor_B.move_front(speed) ;
+motor_B.move_front(speed);
 
-}
-
-if(command == UP_LEFT){
-
-  motor_A.move_front(speed);
- 
-  motor_B.move_front(motor_B.potencia(speed, rotation_));
-
-}
-
-if (command == UP_RIGHT) {
-
-  motor_A.move_front(motor_A.potencia(speed, rotation_));
-
-  motor_B.move_front(speed);
-
-}
-
-if(command == DOWN){
-
-  motor_A.move_back(speed);
-
-  motor_B.move_back(speed);
-
-}
-
-if(command == SPIN){
-
-  motor_A.move_front(speed);
-
-  motor_B.move_back(speed);
-
-}
+motor_B.move_front(motor_B.potencia(speed, rotation_));
