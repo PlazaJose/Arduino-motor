@@ -16,6 +16,6 @@ float rotation_ = 0.5;
 
 motor_A.move_front(speed);
 
-motor_B.move_front(speed);
+motor_B.move_back(speed);
 
 motor_B.move_front(motor_B.potencia(speed, rotation_));
